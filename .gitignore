@@ -6,3 +6,8 @@ __pycache__/
 
 # Work-in-progress scripts
 scratch/
+
+
+# PyCharm
+.idea/
+*.iml
