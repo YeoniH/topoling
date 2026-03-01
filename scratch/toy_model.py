@@ -4,10 +4,10 @@ import matplotlib.pyplot as plt
 from transformers import AutoTokenizer, AutoModel
 from ripser import ripser
 from persim import plot_diagrams, PersistenceImager
-import nltk
-
-# Ensure you have sentence splitting capability
-nltk.download('punkt')
+# import nltk
+#
+# # Ensure you have sentence splitting capability
+# nltk.download('punkt_tab')
 from nltk.tokenize import sent_tokenize
 
 
@@ -17,7 +17,6 @@ def get_sentence_embeddings(text, model_name="allenai/specter2_base"):
 
     # Split abstract into sentences
     sentences = sent_tokenize(text)
-    print(sentences)
 
     embeddings = []
     for sentence in sentences:
